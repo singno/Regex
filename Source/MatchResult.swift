@@ -23,6 +23,11 @@ public struct MatchResult {
   public var matchedString: String {
     return _result.matchedString
   }
+    
+    // Fork to add NSRange support
+    var matchedRange: NSRange {
+        return self._result.result.rangeAtIndex(0)
+    }
 
   /// The matching string for each capture group in the regular expression
   /// (if any).
