@@ -25,7 +25,7 @@ public struct MatchResult {
   }
     
     // Fork to add NSRange support
-    var matchedRange: NSRange {
+    public var matchedRange: NSRange {
         return self._result.result.rangeAtIndex(0)
     }
 
